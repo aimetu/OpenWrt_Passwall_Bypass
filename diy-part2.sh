@@ -17,4 +17,4 @@ sed -i 's/192.168.1.1/192.168.188.1/g' package/base-files/files/bin/config_gener
 sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' ./feeds/luci/collections/luci/Makefile
 
 # Add OpenAppFilter
-git clone --depth 1 -b oaf-3.0.1 https://github.com/destan19/OpenAppFilter.git
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
