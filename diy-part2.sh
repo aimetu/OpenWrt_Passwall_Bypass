@@ -21,3 +21,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' ./feeds/luci/collections/lu
 
 # Add OpenAppFilter
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
+#batman
+rm -fr build_dir/target-mipsel_24kc_musl/linux-ramips_mt7621/batman-adv-2022.0
+rm -fr feeds/routing/batman-adv
+svn co https://github.com/openwrt/routing/branches/openwrt-22.03/batman-adv/ feeds/routing/batman-adv
