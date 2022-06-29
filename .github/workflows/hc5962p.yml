@@ -86,10 +86,6 @@ jobs:
          sudo rm -rf ./feeds/kenzo/luci-app-serverchan
          sudo rm -rf ./feeds/kenzo/smartdns/
          sudo rm -rf ./feeds/kenzo/microsocks/
-         sudo rm -rf ./feeds/packages/net/mosdns && cp -rf ./feeds/kenzo/mosdns ./feeds/packages/net/mosdns
-         sed -i 's/mosdns_neo/mosdns/g' ./feeds/kenzo/luci-app-mosdns/Makefile
-         sed -i 's/mosdns_neo/mosdns/g' ./feeds/kenzo/mosdns/Makefile
-         sed -i 's/mosdns_neo/mosdns/g' ./feeds/packages/net/mosdns/Makefile
          sudo rm -rf ./feeds/kenzo/redsocks2
          sudo rm -rf ./feeds/kenzo/luci-lib-fs
          sudo rm -rf ./feeds/kenzo/luci-theme-argon
